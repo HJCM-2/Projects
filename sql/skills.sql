@@ -15,7 +15,7 @@ CREATE DATABASE sqllearning;
 USE sqllearning;
 
 SELECT sale_price FROM milk_tea;
-SELECT prod_id, prod_name, net_w AS net_weight, pro_date, valid_month AS 保质期, in_price, sale_price FROM milk_tea;
+SELECT prod_id, prod_name, net_w AS net_weight, pro_date, valid_month, in_price, sale_price FROM milk_tea;
 
 SELECT * FROM milk_tea;
 SELECT m.prod_name FROM milk_tea AS m;
@@ -25,10 +25,10 @@ SELECT m.prod_name FROM milk_tea AS m;
 
 SELECT m.pro_date, m.sale_price, m.net_w FROM milk_tea AS m;
 
-SELECT prod_id, prod_name, net_w AS net_weight, pro_date, valid_month AS 保质期, in_price, sale_price, 0.9 AS discount FROM milk_tea;
-SELECT prod_id, prod_name, net_w AS net_weight, pro_date, valid_month AS 保质期, in_price, sale_price, '零食' AS class FROM milk_tea;
+SELECT prod_id, prod_name, net_w AS net_weight, pro_date, valid_month, in_price, sale_price, 0.9 AS discount FROM milk_tea;
+SELECT prod_id, prod_name, net_w AS net_weight, pro_date, valid_month, in_price, sale_price, '零食' AS class FROM milk_tea;
 
-SELECT prod_id, prod_name, net_w AS net_weight, pro_date, valid_month AS 保质期, in_price, sale_price, m.sale_price-m.in_price AS profit, 0.9 AS discount, m.sale_price*0.9 AS new_sale FROM milk_tea AS m;
+SELECT prod_id, prod_name, net_w AS net_weight, pro_date, valid_month, in_price, sale_price, m.sale_price-m.in_price AS profit, 0.9 AS discount, m.sale_price*0.9 AS new_sale FROM milk_tea AS m;
 
 -- 拼接
 SELECT m.*, CONCAT(prod_name, '（', net_w, '）') AS '产品信息' FROM milk_tea AS m;
