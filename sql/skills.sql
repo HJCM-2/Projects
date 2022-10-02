@@ -60,7 +60,7 @@ SELECT m.* FROM milk_tea AS m ORDER BY m.valid_month, m.sale_price;
 SELECT m.* FROM milk_tea AS m ORDER BY m.valid_month, m.sale_price DESC;
 SELECT m.* FROM milk_tea AS m ORDER BY m.valid_month DESC, m.sale_price DESC;
 
-SELECT m.* FROM milk_tea AS m ORDER BY 5, 7;  【不建议】
+SELECT m.* FROM milk_tea AS m ORDER BY 5, 7;  -- 不建议
 
 -- 过滤子句：from之后 order by 之前
 
